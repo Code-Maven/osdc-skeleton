@@ -4,6 +4,11 @@
     "github": "szabgab",
     "gitlab": "szabgab",
     "devto": "szabgab",
-    "posts": []
+    "posts": [
+        {
+            "title": "Open Source Development Courses",
+            "url": "https://dev.to/szabgab/open-source-development-courses-5d4b"
+        }
+    ]
 }
 
