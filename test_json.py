@@ -1,13 +1,9 @@
-import json
-import os
+from generate import read_json_files
 
 def test_json():
     for folder in ['participants', 'mentors']:
-        for filename in os.listdir(folder):
-            if filename == '.gitkeep':
-                continue
-            print(filename)
-            with open(os.path.join(folder, filename)) as fh:
-                data = json.load(fh)
-            assert 'name' in data
+        people = read_json_files(folder)
+        for person in people:
+            assert 'name' in person
+
 
