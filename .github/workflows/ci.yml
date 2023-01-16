@@ -25,11 +25,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-
     - name: Setup Pages
       uses: actions/configure-pages@v2
 
@@ -41,7 +36,7 @@ jobs:
 
   # Deployment job
   deploy:
-    #if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
