@@ -1,5 +1,3 @@
-name: CI
-
 jobs:
   generate:
     uses: osdc-code-maven/osdc-2023-01-public/.github/workflows/ci.yml@main
