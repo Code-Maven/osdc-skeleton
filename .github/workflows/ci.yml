@@ -1,3 +1,10 @@
+on:
+  push:
+  pull_request:
+#  schedule:
+#    - cron: '9 * * * *'
+  workflow_dispatch:
+
 jobs:
   generate:
     uses: osdc-code-maven/osdc-2023-01-public/.github/workflows/ci.yml@main
