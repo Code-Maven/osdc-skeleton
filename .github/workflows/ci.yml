@@ -8,6 +8,7 @@ on:
 env:
     MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
+secrets: inherit
 
 permissions:
   contents: read
